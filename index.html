@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <!--link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>HackOro Paris 2019</title>
     <style type="text/css">
@@ -30,9 +31,9 @@ a {
 a:hover {
     color: #FFDA44;
 }
-.jumbotron h1 {
-    font-family: monospace;
-}
+/*.jumbotron h1 {*/
+    /*font-family: monospace;*/
+/*}*/
 .jumbotron h1,
 .jumbotron p {
     color: #FFF;
@@ -61,15 +62,62 @@ pre {
     padding: 1em 2em;
     border-left: 5px solid #f2c200;
 }
+        .card-img {
+            width: 8em;
+        }
+
+        .card-img-top {
+            margin: 25%;
+            width: 8em;
+        }
+
+        .container {
+            margin-top: 1rem;
+        }
+
+        .jumbotron {
+            background: url(image/OroVibe2019-hero.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        a {
+            color: #f2c200;
+        }
+
+        a:hover {
+            color: #FFDA44;
+        }
+
+        .jumbotron h1,
+        .jumbotron p {
+            color: #FFF;
+        }
+
+        .jumbotron .btn-primary {
+            background-color: #f2c200;
+            border-color: #FFDA44;
+        }
+
+        .jumbotron .btn-primary a {
+            color: #000;
+        }
+
+        @media (min-width: 576px) {
+            .jumbotron {
+                padding: 10rem 4rem;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1 class="display-4">&gt; HackOro Paris 2019</h1>
-        <p class="lead">OroPlatform Hackathon, <span>March 13th 2019</span></p>
-        <div class="btn btn-primary btn-lg"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></div>
+        <h1 class="display-1 text-bold txt-black">HackOro Paris 2019</h1>
+        <p class="lead display-4">OroPlatform Hackathon, March 13th 2019</p>
+        <div class="btn btn-primary btn-lg"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a>
+        </div>
     </div>
 </div>
 
@@ -78,16 +126,17 @@ pre {
         <div class="card-body">
             <h2 class="card-title">HackOro</h2>
             <h3 class="card-subtitle mb-2 text-muted">The OroPlatform hackathon</h3>
-            <p class="card-text">The Hackaton taking place one day after the OroVibe Paris 2019, made by developers, for developers.</p>
+            <p class="card-text">The Hackaton taking place one day after the OroVibe Paris 2019, made by developers, for
+                developers.</p>
             <p class="card-text">
                 The hackathon will be about:
-                <ul>
-                    <li>OroPlatform</li>
-                    <li>OroCRM</li>
-                    <li>OroCommerce</li>
-                    <li>Marello</li>
-                    <li>and other BAP apps...</li>
-                </ul>
+            <ul>
+                <li>OroPlatform</li>
+                <li>OroCRM</li>
+                <li>OroCommerce</li>
+                <li>Marello</li>
+                <li>and other BAP apps...</li>
+            </ul>
             </p>
             <p class="card-text">Bring your laptop, your brain and your cheerfulness.</p>
             <h3>What is included</h3>
@@ -106,12 +155,13 @@ pre {
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-2">
-            <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img" /></a>
+            <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img"/></a>
         </div>
         <div class="col-md-4">
             <div class="card-body">
                 <h2 class="card-title"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></h2>
-                <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on Weezevent.</a></p>
+                <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on
+                    Weezevent.</a></p>
             </div>
         </div>
     </div>
@@ -128,7 +178,7 @@ pre {
                     <h2 class="card-title">Location</h2>
                     <h3 class="card-subtitle mb-2 text-muted">Espace Hermes</h3>
                     <p class="card-text">Cité Joly<br>75011 Paris</p>
-                    <a href="https://www.openstreetmap.org/#map=18/48.86239/2.38311">Show a larger map</a>
+                    <a href="https://www.openstreetmap.org/?mlat=48.86241&amp;mlon=2.38301#map=17/48.86241/2.38301">Show a larger map</a>
                 </div>
             </div>
         </div>
@@ -218,24 +268,38 @@ composer create-project marellocommerce/marello-application \
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-md-2">
-            <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img" /></a>
+            <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img"/></a>
         </div>
         <div class="col-md-4">
             <div class="card-body">
                 <h2 class="card-title"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></h2>
-                <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on Weezevent.</a></p>
+                <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on
+                    Weezevent.</a></p>
             </div>
         </div>
     </div>
 </div>
 
 <blockquote class="text-center">
-    <p><small class="text-muted">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>, <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></small></p>
+    <p>
+        <small class="text-muted">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a>, <a
+                href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>, <a
+                href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+            3.0 BY</a></small>
+    </p>
 </blockquote>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 <script>//$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
 </body>
 </html>
