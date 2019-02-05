@@ -30,6 +30,9 @@ a {
 a:hover {
     color: #FFDA44;
 }
+.jumbotron h1 {
+    font-family: monospace;
+}
 .jumbotron h1,
 .jumbotron p {
     color: #FFF;
@@ -46,19 +49,25 @@ a:hover {
         padding: 10rem 4rem;
     }
 }
+pre {
+    background: #323232;
+    color: #f2c200;
+    padding: 1em 2em;
+    border-left: 5px solid #f2c200;
+}
     </style>
 </head>
 <body>
 
 <div class="jumbotron">
     <div class="container text-center">
-        <h1 class="display-4">HackOro Paris 2019</h1>
+        <h1 class="display-4">&gt; HackOro Paris 2019</h1>
         <p class="lead">OroPlatform Hackathon, March 13th 2019</p>
-        <div class="btn btn-primary"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></div>
+        <div class="btn btn-primary btn-lg"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></div>
     </div>
 </div>
 
-<div class="container">
+<div class="container description">
     <div class="card">
         <div class="card-body">
             <h2 class="card-title">HackOro</h2>
@@ -75,6 +84,15 @@ a:hover {
                 </ul>
             </p>
             <p class="card-text">Bring your laptop, your brain and your cheerfulness.</p>
+            <h3>What is included</h3>
+            <p class="card-text">
+                <ul>
+                    <li>breakfast</li>
+                    <li>lunch (buffet meals)</li>
+                    <li>mineral water, coffee and tea</li>
+                </ul>
+            </p>
+            <p class="card-text">In case of dietary restrictions, please contact Grégory Planchat by mail at gregory[at]kiboko.fr</p>
         </div>
     </div>
 </div>
@@ -143,6 +161,50 @@ a:hover {
                 <h2 class="card-title">Grow</h2>
                 <p class="card-text">Grow your knowledge about Oro applications and extensions </p>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container description">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Organization</h2>
+            <h3 class="card-subtitle mb-2 text-muted">What to expect during this hackathon</h3>
+
+            <p class="card-text">
+                The hackathon content will be determined by a call for proposals to participants.
+                Each Participant will be free to team up with the people interested in the same subject,
+                or work independently and share experiences, methodologies and results.
+            </p>
+
+            <h4>During the hackathon</h4>
+            <p class="card-text">
+                The hackathon content will be determined by a call for proposals to participants 2 weeks before the event.
+            </p>
+            <p class="card-text">
+                Feel free to suggest a subject, whichever is your level of knowledge of the ecosystem.
+            </p>
+            <p class="card-text">
+                Team up with other developers to build bigger projects.
+            </p>
+
+            <h4>Prepare your computers!</h4>
+
+            <p class="card-text">Time goes by so fast! Please, prepare your computer to be able to quickly
+                start working on OroPlatform applications.</p>
+            <p class="card-text">You can install every Oro application this way:</p>
+            <p class="card-text"><pre>
+composer create-project oro/platform-application \
+    --repository='{"type":"vcs","url":"git@github.com:oroinc/platform-application"}'</pre></p>
+            <p class="card-text"><pre>
+composer create-project oro/commerce-application \
+    --repository='{"type":"vcs","url":"git@github.com:oroinc/orocommerce-application"}'</pre></p>
+            <p class="card-text"><pre>
+composer create-project oro/crm-application \
+    --repository='{"type":"vcs","url":"git@github.com:oroinc/crm-application"}'</pre></p>
+            <p class="card-text"><pre>
+composer create-project marellocommerce/marello-application \
+    --repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'</pre></p>
         </div>
     </div>
 </div>
