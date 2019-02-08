@@ -264,9 +264,9 @@ pre {
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#installation-examples">
                         <div class="card-body">
-                            <p class="card-text"><a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">Check the OroPlatform CE installation instructions for more details.</a></p>
+                            <p class="card-text alert alert-secondary">Check the OroPlatform CE <a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">installation instructions</a> for more details.</p>
                             <p class="card-text"><pre>
-composer create-project oro/platform-application \
+composer create-project oro/platform-application:^3.1 \
     --repository='{"type":"vcs","url":"git@github.com:oroinc/platform-application"}'
 
 cd platform-application
@@ -296,9 +296,9 @@ bin/console oro:install \
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#installation-examples">
                         <div class="card-body">
-                            <p class="card-text"><a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">Check the OroCommerce CE installation instructions for more details.</a></p>
+                            <p class="card-text alert alert-secondary">Check the OroCommerce CE <a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">installation instructions</a> for more details.</p>
                             <p class="card-text"><pre>
-composer create-project oro/commerce-crm-application \
+composer create-project oro/commerce-crm-application:^3.1 \
     --repository='{"type":"vcs","url":"git@github.com:oroinc/orocommerce-application"}'
 
 cd commerce-crm-application
@@ -328,9 +328,9 @@ bin/console oro:install \
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#installation-examples">
                         <div class="card-body">
-                            <p class="card-text"><a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">Check the OroCRM CE installation instructions for more details.</a></p>
+                            <p class="card-text alert alert-secondary">Check the OroCRM CE <a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">installation instructions</a> for more details.</p>
                             <p class="card-text"><pre>
-composer create-project oro/crm-application \
+composer create-project oro/crm-application:^3.1 \
     --repository='{"type":"vcs","url":"git@github.com:oroinc/crm-application"}'
 
 cd crm-application
@@ -360,9 +360,10 @@ bin/console oro:install \
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#installation-examples">
                         <div class="card-body">
-                            <p class="card-text"><a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">Check the Marello CE installation instructions for more details.</a></p>
+                            <p class="card-text alert alert-secondary">Check the Marello CE <a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">installation instructions</a> for more details.</p>
+                            <p class="card-text alert alert-info"><i class="fa fa-info"></i> Attention: at the time of the writing, the Marello 2.0 version isn't yet released, we are providing an 1.5 version here.</p>
                             <p class="card-text"><pre>
-composer create-project marellocommerce/marello-application \
+composer create-project marellocommerce/marello-application:^1.5 \
     --repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'
 
 cd marello-application
