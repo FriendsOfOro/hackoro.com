@@ -15,9 +15,22 @@ a:hover {
 iframe { max-width: 100%;}
 
 /* language-switcher */
-.language-switcher { position: absolute; top: 0; right: 20%; background: #FFF; padding: 2px 5px; border-radius: 0 0 5px 5px;}
-.language-switcher .item { padding: 1px; font-weight: bold; font-size: 1em;}
-.language-switcher .item.active {}
+.language-switcher {
+    position: fixed;
+    top: 0;
+    right: 20%;
+    z-index: 12;
+    background: #FFF;
+    padding: 2px 5px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 1px #BFBFBF;
+}
+.language-switcher .item {
+    padding: 1px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
 
 /* jumbotron */
 .jumbotron {
