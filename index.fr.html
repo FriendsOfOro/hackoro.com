@@ -12,6 +12,11 @@
 </head>
 <body>
 
+<div class="language-switcher">
+    <a href="index.html" class="item">EN</a>
+    <span class="item active">FR</span>
+</div>
+
 <div class="jumbotron">
     <div class="container text-center text-muted card-subtitle">
         <h1 class="display-4">&gt; HackOro Paris 2019<span class="caret">|</span></h1>
@@ -158,174 +163,171 @@
 
 <div class="bloc bloc-organization">
     <div class="container description">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Organisation</h2>
-                <h3 class="card-subtitle mb-2 text-muted">À quoi s'attendre lors de ce hackathon</h3>
+        <h2 class="card-title">Organisation</h2>
+        <h3 class="card-subtitle mb-2 text-muted">À quoi s'attendre lors de ce hackathon</h3>
 
-                <p class="card-text">
-                    Le contenu du hackathon sera déterminé par un appel à propositions des participants.
-                    Chaque participant sera libre de faire équipe avec les personnes intéressées par le même sujet
-                    ou travailler de manière indépendante et partager des expériences, des méthodologies et des résultats.
-                </p>
+        <p class="card-text">
+            Le contenu du hackathon sera déterminé par un appel à propositions des participants.
+            Chaque participant sera libre de faire équipe avec les personnes intéressées par le même sujet
+            ou travailler de manière indépendante et partager des expériences, des méthodologies et des résultats.
+        </p>
 
-                <h4>Pendant le hackathon</h4>
-                <p class="card-text">
-                    Le contenu du hackathon sera déterminé par un appel à propositions aux participants 2 semaines avant l'événement.
-                    Apporter vos propres idées, suggestions et questions.
-                <p class="card-text">
-                    N'hésitez pas à suggérer un sujet, quel que soit votre niveau de connaissance de l'écosystème.
-                </p>
-                <p class="card-text">
-                    Faites équipe avec d'autres développeurs pour construire de plus grands projets.
-                </p>
+        <h4>Pendant le hackathon</h4>
+        <p class="card-text">
+            Le contenu du hackathon sera déterminé par un appel à propositions aux participants 2 semaines avant l'événement.
+            Apporter vos propres idées, suggestions et questions.
+        <p class="card-text">
+            N'hésitez pas à suggérer un sujet, quel que soit votre niveau de connaissance de l'écosystème.
+        </p>
+        <p class="card-text">
+            Faites équipe avec d'autres développeurs pour construire de plus grands projets.
+        </p>
 
-                <h4>Preparer votre poste !</h4>
+        <h4>Preparer votre poste !</h4>
+        <p class="card-text">
+            Le temps passe si vite ! S'il vous plaît, préparez votre ordinateur pour pouvoir rapidement
+            commencer à travailler sur les applications OroPlatform.
+        </p>
+        <p class="card-text">
+            Voici des astuces pour installer les applications OroPlatform :
+        </p>
 
-                <p class="card-text">
-                    Le temps passe si vite ! S'il vous plaît, préparez votre ordinateur pour pouvoir rapidement
-                    commencer à travailler sur les applications OroPlatform.
-                </p>
-                <p class="card-text">Voici des astuces pour installer les applications OroPlatform :</p>
-                <div class="accordion" id="installation-examples">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    OroPlatform CE
-                                </button>
-                            </h2>
-                        </div>
+        <div class="accordion" id="installation-examples">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            OroPlatform CE
+                        </button>
+                    </h2>
+                </div>
 
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#installation-examples">
-                            <div class="card-body">
-                                <p class="card-text alert alert-secondary">Check the OroPlatform CE <a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">installation instructions</a> for more details.</p>
-                                <p class="card-text"><pre>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#installation-examples">
+                    <div class="card-body">
+                        <p class="card-text alert alert-secondary">Check the OroPlatform CE <a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">installation instructions</a> for more details.</p>
+                        <p class="card-text"><pre>
 composer create-project oro/platform-application:^3.1 \
-    --repository='{"type":"vcs","url":"git@github.com:oroinc/platform-application"}'
+--repository='{"type":"vcs","url":"git@github.com:oroinc/platform-application"}'
 
 cd platform-application
 
 bin/console oro:install \
-    --application-url=http://localhost:8000 \
-    --env=prod \
-    --organization-name=HackOro \
-    --user-name=admin \
-    --user-email=hello@example.com \
-    --user-firstname=John \
-    --user-lastname=Doe \
-    --user-password=password \
-    --language=en \
-    --formatting-code=en \
-    --symlink \
-    --sample-data=y \
-    --timeout=0</pre></p>
-                            </div>
-                        </div>
+--application-url=http://localhost:8000 \
+--env=prod \
+--organization-name=HackOro \
+--user-name=admin \
+--user-email=hello@example.com \
+--user-firstname=John \
+--user-lastname=Doe \
+--user-password=password \
+--language=en \
+--formatting-code=en \
+--symlink \
+--sample-data=y \
+--timeout=0</pre></p>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    OroCommerce CE
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#installation-examples">
-                            <div class="card-body">
-                                <p class="card-text alert alert-secondary">Check the OroCommerce CE <a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">installation instructions</a> for more details.</p>
-                                <p class="card-text"><pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            OroCommerce CE
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#installation-examples">
+                    <div class="card-body">
+                        <p class="card-text alert alert-secondary">Check the OroCommerce CE <a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">installation instructions</a> for more details.</p>
+                        <p class="card-text"><pre>
 composer create-project oro/commerce-crm-application:^3.1 \
-    --repository='{"type":"vcs","url":"git@github.com:oroinc/orocommerce-application"}'
+--repository='{"type":"vcs","url":"git@github.com:oroinc/orocommerce-application"}'
 
 cd commerce-crm-application
 
 bin/console oro:install \
-    --application-url=http://localhost:8000 \
-    --env=prod \
-    --organization-name=HackOro \
-    --user-name=admin \
-    --user-email=hello@example.com \
-    --user-firstname=John \
-    --user-lastname=Doe \
-    --user-password=password \
-    --language=en \
-    --formatting-code=en \
-    --symlink \
-    --sample-data=y \
-    --timeout=0</pre></p>
-                            </div>
-                        </div>
+--application-url=http://localhost:8000 \
+--env=prod \
+--organization-name=HackOro \
+--user-name=admin \
+--user-email=hello@example.com \
+--user-firstname=John \
+--user-lastname=Doe \
+--user-password=password \
+--language=en \
+--formatting-code=en \
+--symlink \
+--sample-data=y \
+--timeout=0</pre></p>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    OroCRM CE
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#installation-examples">
-                            <div class="card-body">
-                                <p class="card-text alert alert-secondary">Check the OroCRM CE <a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">installation instructions</a> for more details.</p>
-                                <p class="card-text"><pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            OroCRM CE
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#installation-examples">
+                    <div class="card-body">
+                        <p class="card-text alert alert-secondary">Check the OroCRM CE <a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">installation instructions</a> for more details.</p>
+                        <p class="card-text"><pre>
 composer create-project oro/crm-application:^3.1 \
-    --repository='{"type":"vcs","url":"git@github.com:oroinc/crm-application"}'
+--repository='{"type":"vcs","url":"git@github.com:oroinc/crm-application"}'
 
 cd crm-application
 
 bin/console oro:install \
-    --application-url=http://localhost:8000 \
-    --env=prod \
-    --organization-name=HackOro \
-    --user-name=admin \
-    --user-email=hello@example.com \
-    --user-firstname=John \
-    --user-lastname=Doe \
-    --user-password=password \
-    --language=en \
-    --formatting-code=en \
-    --symlink \
-    --sample-data=y \
-    --timeout=0</pre></p>
-                            </div>
-                        </div>
+--application-url=http://localhost:8000 \
+--env=prod \
+--organization-name=HackOro \
+--user-name=admin \
+--user-email=hello@example.com \
+--user-firstname=John \
+--user-lastname=Doe \
+--user-password=password \
+--language=en \
+--formatting-code=en \
+--symlink \
+--sample-data=y \
+--timeout=0</pre></p>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                    Marello CE
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#installation-examples">
-                            <div class="card-body">
-                                <p class="card-text alert alert-secondary">Check the Marello CE <a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">installation instructions</a> for more details.</p>
-                                <p class="card-text alert alert-info"><i class="fa fa-info"></i> Attention: at the time of the writing, the Marello 2.0 version isn't yet released, we are providing an 1.5 version here.</p>
-                                <p class="card-text"><pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            Marello CE
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#installation-examples">
+                    <div class="card-body">
+                        <p class="card-text alert alert-secondary">Check the Marello CE <a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">installation instructions</a> for more details.</p>
+                        <p class="card-text alert alert-info"><i class="fa fa-info"></i> Attention: at the time of the writing, the Marello 2.0 version isn't yet released, we are providing an 1.5 version here.</p>
+                        <p class="card-text"><pre>
 composer create-project marellocommerce/marello-application:^1.5 \
-    --repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'
+--repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'
 
 cd marello-application
 
 bin/console oro:install \
-    --application-url=http://localhost:8000 \
-    --env=prod \
-    --organization-name=HackOro \
-    --user-name=admin \
-    --user-email=hello@example.com \
-    --user-firstname=John \
-    --user-lastname=Doe \
-    --user-password=password \
-    --symlink \
-    --sample-data=y \
-    --timeout=0</pre></p>
-                            </div>
-                        </div>
+--application-url=http://localhost:8000 \
+--env=prod \
+--organization-name=HackOro \
+--user-name=admin \
+--user-email=hello@example.com \
+--user-firstname=John \
+--user-lastname=Doe \
+--user-password=password \
+--symlink \
+--sample-data=y \
+--timeout=0</pre></p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

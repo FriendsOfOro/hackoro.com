@@ -14,6 +14,11 @@ a:hover {
 }
 iframe { max-width: 100%;}
 
+/* language-switcher */
+.language-switcher { position: absolute; top: 0; right: 20%; background: #FFF; padding: 2px 5px; border-radius: 0 0 5px 5px;}
+.language-switcher .item { padding: 1px; font-weight: bold; font-size: 1em;}
+.language-switcher .item.active {}
+
 /* jumbotron */
 .jumbotron {
     background: url(image/OroVibe2019-hero.jpg);
