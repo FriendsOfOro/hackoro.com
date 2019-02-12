@@ -6,115 +6,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <!--link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <title>HackOro Paris 2019</title>
-    <style type="text/css">
-.card-img {
-    width: 8em;
-}
-.card-img-top {
-    margin: 25%;
-    width: 8em;
-}
-.container {
-    margin-top: 1rem;
-}
-.jumbotron {
-    background: url(image/OroVibe2019-hero.jpg);
-    background-position: center;
-    background-size: cover;
-}
-a {
-    color: #f2c200;
-}
-a:hover {
-    color: #FFDA44;
-}
-.jumbotron h1 {
-    font-family: monospace;
-}
-.jumbotron h1,
-.jumbotron p {
-    color: #FFF;
-}
-.jumbotron .lead {
-    font-size: 2em;
-}
-.jumbotron .lead span {
-    color: #f2c200;
-}
-.jumbotron .btn-primary {
-    background-color: #f2c200;
-    border-color: #FFDA44;
-}
-.jumbotron .btn-primary a {
-    color: #000;
-}
-@media (min-width: 576px) {
-    .jumbotron {
-        padding: 10rem 4rem;
-    }
-}
-pre {
-    background: #323232;
-    color: #f2c200;
-    padding: 1em 2em;
-    border-left: 5px solid #f2c200;
-}
-.caret {
-    color: #FFF;
-    -webkit-animation: 1s blinking-caret step-end infinite;
-    -moz-animation: 1s blinking-caret step-end infinite;
-    -ms-animation: 1s blinking-caret step-end infinite;
-    -o-animation: 1s blinking-caret step-end infinite;
-    animation: 1s blinking-caret step-end infinite;
-}
-
-@keyframes blinking-caret {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #FFF;
-    }
-}
-
-@-moz-keyframes blinking-caret {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #FFF;
-    }
-}
-
-@-webkit-keyframes blinking-caret {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #FFF;
-    }
-}
-
-@-ms-keyframes blinking-caret {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #FFF;
-    }
-}
-
-@-o-keyframes blinking-caret {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: #FFF;
-    }
-}
-    </style>
 </head>
 <body>
 
@@ -122,166 +16,190 @@ pre {
     <div class="container text-center text-muted card-subtitle">
         <h1 class="display-4">&gt; HackOro Paris 2019<span class="caret">|</span></h1>
         <p class="lead">Le hackathon OroPlatform <span>#hackoro2019</span>, le 13 mars 2019</p>
-        <div class="btn btn-primary btn-lg"><a href="https://www.weezevent.com/orohack-paris-2019">Billeterie</a></div>
+        <a href="https://www.weezevent.com/orohack-paris-2019" class="btn btn-primary btn-lg">Billeterie</a>
     </div>
 </div>
 
-<div class="container">
-    <div class="text-center h4">Nos Sponsors</div>
-    <div class="row justify-content-md-center">
-        <div class="col-md-4">
-            <img src="https://via.placeholder.com/300x150" alt="Sponsor">
-        </div>
-        <div class="col-md-4">
-            <img src="https://via.placeholder.com/300x150" alt="Sponsor">
-        </div>
-        <div class="col-md-4">
-            <img src="https://via.placeholder.com/300x150" alt="Sponsor">
-        </div>
-    </div>
-</div>
-
-<div class="container description">
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title">HackOro</h2>
-            <h3 class="card-subtitle mb-2 text-muted">Le hackathon OroPlatform</h3>
-            <p class="card-text">Le hackathon aura lieu le lendemain de l'OroVibe Paris 2019, organisé par les développeurs, pour les développeurs.</p>
-            <p class="card-text">
-                The hackathon will be about:
-                <ul>
-                    <li>OroPlatform</li>
-                    <li>OroCRM</li>
-                    <li>OroCommerce</li>
-                    <li>Marello</li>
-                    <li>and other BAP apps...</li>
-                </ul>
-            </p>
-            <p class="card-text">Bring your laptop, your brain and your cheerfulness.</p>
-            <h3>What is included</h3>
-            <p class="card-text">
-                <ul>
-                    <li>breakfast</li>
-                    <li>lunch (buffet meals)</li>
-                    <li>mineral water, coffee and tea</li>
-                </ul>
-            </p>
-            <p class="card-text">In case of dietary restrictions, please contact Grégory Planchat by mail at gregory[at]kiboko.fr</p>
+<div class="bloc bloc-sponsors">
+    <div class="container">
+        <div class="text-center h4">Nos Sponsors</div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-4 text-center">
+                <a href="https://www.synolia.com/" target="_blank"><img src="image/logo/logo-synolia.png" alt="Synolia"></a>
+            </div>
+            <!--<div class="col-md-4 text-center">-->
+                <!--<a href="https://www.smile.eu" target="_blank"><img src="image/logo/logo-smile.png" alt="Smile"></a>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 text-center">-->
+                <!--<a href="https://www.dnd.fr/" target="_blank"><img src="image/logo/logo-dnd.png" alt="DnD"></a>-->
+            <!--</div>-->
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row justify-content-md-center">
-        <div class="col-md-2">
-            <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img" /></a>
-        </div>
-        <div class="col-md-4">
+<div class="bloc bloc-description">
+    <div class="container description">
+        <div class="card">
             <div class="card-body">
-                <h2 class="card-title"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></h2>
-                <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on Weezevent.</a></p>
+                <h2 class="card-title">HackOro</h2>
+                <h3 class="card-subtitle mb-2 text-muted">Le hackathon OroPlatform</h3>
+                <p class="card-text">Le hackathon aura lieu le lendemain de l'OroVibe Paris 2019, organisé par les développeurs, pour les développeurs.</p>
+                <p class="card-text">
+                    The hackathon will be about:
+                    <ul>
+                        <li>OroPlatform</li>
+                        <li>OroCRM</li>
+                        <li>OroCommerce</li>
+                        <li>Marello</li>
+                        <li>and other BAP apps...</li>
+                    </ul>
+                </p>
+                <p class="card-text">Bring your laptop, your brain and your cheerfulness.</p>
+                <h3>What is included</h3>
+                <p class="card-text">
+                    <ul>
+                        <li>breakfast</li>
+                        <li>lunch (buffet meals)</li>
+                        <li>mineral water, coffee and tea</li>
+                    </ul>
+                </p>
+                <p class="card-text">In case of dietary restrictions, please contact Grégory Planchat by mail at gregory[at]kiboko.fr</p>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-8">
-                    <iframe width="715" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.380852103233338%2C48.861259825508164%2C2.385358214378357%2C48.86352550013056&amp;layer=mapnik&amp;marker=48.86237190088616%2C2.383017798420042"></iframe>
-                </div>
-                <div class="col-4">
-                    <h2 class="card-title">Location</h2>
-                    <h3 class="card-subtitle mb-2 text-muted">Espace Hermes</h3>
-                    <p class="card-text">Cité Joly<br>75011 Paris</p>
-                    <a href="https://www.openstreetmap.org/#map=18/48.86239/2.38311">Show a larger map</a>
+<div class="bloc bloc-ticket">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-2">
+                <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img" /></a>
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                        <p class="card-text">
+                            <b>HackOro Paris 2019</b><br />
+                            13 mars 2019 - 09:00 à 17:00</p>
+                    <h2 class="card-title"><a href="https://www.weezevent.com/orohack-paris-2019">Obtenez votre billet</a></h2>
+                    <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Obtenez votre billet sur Weezevent</a></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-            <img src="image/interview.png" class="card-img-top" alt="Meet">
-            <div class="card-body">
-                <h2 class="card-title">Meet</h2>
-                <p class="card-text">Meet other developers sharing your professional interests</p>
+<div class="bloc bloc-map">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <iframe width="715" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.380852103233338%2C48.861259825508164%2C2.385358214378357%2C48.86352550013056&amp;layer=mapnik&amp;marker=48.86237190088616%2C2.383017798420042"></iframe>
             </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-            <img src="image/tools.png" class="card-img-top" alt="Build">
-            <div class="card-body">
-                <h2 class="card-title">Build</h2>
-                <p class="card-text">Build and share tooling with other developers in the ecosystem</p>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-            <img src="image/innovation.png" class="card-img-top" alt="Learn">
-            <div class="card-body">
-                <h2 class="card-title">Learn</h2>
-                <p class="card-text">Learn from other community members and the Oro Inc. team members</p>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3">
-            <img src="image/sprout.png" class="card-img-top" alt="Grow">
-            <div class="card-body">
-                <h2 class="card-title">Grow</h2>
-                <p class="card-text">Grow your knowledge about Oro applications and extensions </p>
+            <div class="col-4">
+                <h2 class="card-title">Location</h2>
+                <h3 class="card-subtitle mb-2 text-muted">Espace Hermes</h3>
+                <p class="card-text">Cité Joly<br>75011 Paris</p>
+                <a href="https://www.openstreetmap.org/#map=18/48.86239/2.38311">Show a larger map</a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container description">
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title">Organization</h2>
-            <h3 class="card-subtitle mb-2 text-muted">What to expect during this hackathon</h3>
+<div class="bloc bloc-organizers">
+    <div class="container">
+        <div class="text-center h4">Hackathon organizers</div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center">
+                <a href="http://kiboko.fr" target="_blank"><img src="image/logo/logo-kiboko.png" alt="Kiboko"></a>
+            </div>
+            <div class="col-md-6 text-center">
+                <a href="https://www.diglin.com" target="_blank"><img src="image/logo/logo-diglin.png" alt="Diglin"></a>
+            </div>
+        </div>
+    </div>
+</div>
 
-            <p class="card-text">
-                The hackathon content will be determined by a call for proposals to participants.
-                Each Participant will be free to team up with the people interested in the same subject,
-                or work independently and share experiences, methodologies and results.
-            </p>
+<div class="bloc bloc-reassurance">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card-img-top"><img src="image/interview.png" class="card-img" alt="Meet"></div>
+                <div class="card-body">
+                    <h2 class="card-title">Meet</h2>
+                    <p class="card-text">Meet other developers sharing your professional interests</p>
+                </div>
+            </div>
 
-            <h4>During the hackathon</h4>
-            <p class="card-text">
-                The hackathon content will be determined by a call for proposals to participants 2 weeks before the event.
-                Bring your own ideas, suggestions and questionings.
-            </p>
-            <p class="card-text">
-                Feel free to suggest a subject, whichever is your level of knowledge of the ecosystem.
-            </p>
-            <p class="card-text">
-                Team up with other developers to build bigger projects.
-            </p>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card-img-top"><img src="image/tools.png" class="card-img" alt="Build"></div>
+                <div class="card-body">
+                    <h2 class="card-title">Build</h2>
+                    <p class="card-text">Build and share tooling with other developers in the ecosystem</p>
+                </div>
+            </div>
 
-            <h4>Prepare your computers!</h4>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card-img-top"><img src="image/innovation.png" class="card-img" alt="Learn"></div>
+                <div class="card-body">
+                    <h2 class="card-title">Learn</h2>
+                    <p class="card-text">Learn from other community members and the Oro Inc. team members</p>
+                </div>
+            </div>
 
-            <p class="card-text">Time goes by so fast! Please, prepare your computer to be able to quickly
-                start working on OroPlatform applications.</p>
-            <p class="card-text">Following are hints to install OroPlatform applications:</p>
-            <div class="accordion" id="installation-examples">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Bare-metal OroPlatform CE
-                            </button>
-                        </h2>
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="card-img-top"><img src="image/sprout.png" class="card-img" alt="Grow"></div>
+                <div class="card-body">
+                    <h2 class="card-title">Grow</h2>
+                    <p class="card-text">Grow your knowledge about Oro applications and extensions </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#installation-examples">
-                        <div class="card-body">
-                            <p class="card-text alert alert-secondary">Check the OroPlatform CE <a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">installation instructions</a> for more details.</p>
-                            <p class="card-text"><pre>
+<div class="bloc bloc-organization">
+    <div class="container description">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Organization</h2>
+                <h3 class="card-subtitle mb-2 text-muted">What to expect during this hackathon</h3>
+
+                <p class="card-text">
+                    The hackathon content will be determined by a call for proposals to participants.
+                    Each Participant will be free to team up with the people interested in the same subject,
+                    or work independently and share experiences, methodologies and results.
+                </p>
+
+                <h4>During the hackathon</h4>
+                <p class="card-text">
+                    The hackathon content will be determined by a call for proposals to participants 2 weeks before the event.
+                    Bring your own ideas, suggestions and questionings.
+                </p>
+                <p class="card-text">
+                    Feel free to suggest a subject, whichever is your level of knowledge of the ecosystem.
+                </p>
+                <p class="card-text">
+                    Team up with other developers to build bigger projects.
+                </p>
+
+                <h4>Prepare your computers!</h4>
+
+                <p class="card-text">Time goes by so fast! Please, prepare your computer to be able to quickly
+                    start working on OroPlatform applications.</p>
+                <p class="card-text">Following are hints to install OroPlatform applications:</p>
+                <div class="accordion" id="installation-examples">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    OroPlatform CE
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#installation-examples">
+                            <div class="card-body">
+                                <p class="card-text alert alert-secondary">Check the OroPlatform CE <a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">installation instructions</a> for more details.</p>
+                                <p class="card-text"><pre>
 composer create-project oro/platform-application:^3.1 \
     --repository='{"type":"vcs","url":"git@github.com:oroinc/platform-application"}'
 
@@ -301,21 +219,21 @@ bin/console oro:install \
     --symlink \
     --sample-data=y \
     --timeout=0</pre></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                OroCommerce CE
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#installation-examples">
-                        <div class="card-body">
-                            <p class="card-text alert alert-secondary">Check the OroCommerce CE <a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">installation instructions</a> for more details.</p>
-                            <p class="card-text"><pre>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    OroCommerce CE
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#installation-examples">
+                            <div class="card-body">
+                                <p class="card-text alert alert-secondary">Check the OroCommerce CE <a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">installation instructions</a> for more details.</p>
+                                <p class="card-text"><pre>
 composer create-project oro/commerce-crm-application:^3.1 \
     --repository='{"type":"vcs","url":"git@github.com:oroinc/orocommerce-application"}'
 
@@ -335,21 +253,21 @@ bin/console oro:install \
     --symlink \
     --sample-data=y \
     --timeout=0</pre></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                OroCRM CE
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#installation-examples">
-                        <div class="card-body">
-                            <p class="card-text alert alert-secondary">Check the OroCRM CE <a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">installation instructions</a> for more details.</p>
-                            <p class="card-text"><pre>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    OroCRM CE
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#installation-examples">
+                            <div class="card-body">
+                                <p class="card-text alert alert-secondary">Check the OroCRM CE <a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">installation instructions</a> for more details.</p>
+                                <p class="card-text"><pre>
 composer create-project oro/crm-application:^3.1 \
     --repository='{"type":"vcs","url":"git@github.com:oroinc/crm-application"}'
 
@@ -369,22 +287,22 @@ bin/console oro:install \
     --symlink \
     --sample-data=y \
     --timeout=0</pre></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                Marello CE
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#installation-examples">
-                        <div class="card-body">
-                            <p class="card-text alert alert-secondary">Check the Marello CE <a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">installation instructions</a> for more details.</p>
-                            <p class="card-text alert alert-info"><i class="fa fa-info"></i> Attention: at the time of the writing, the Marello 2.0 version isn't yet released, we are providing an 1.5 version here.</p>
-                            <p class="card-text"><pre>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Marello CE
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#installation-examples">
+                            <div class="card-body">
+                                <p class="card-text alert alert-secondary">Check the Marello CE <a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">installation instructions</a> for more details.</p>
+                                <p class="card-text alert alert-info"><i class="fa fa-info"></i> Attention: at the time of the writing, the Marello 2.0 version isn't yet released, we are providing an 1.5 version here.</p>
+                                <p class="card-text"><pre>
 composer create-project marellocommerce/marello-application:^1.5 \
     --repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'
 
@@ -402,24 +320,27 @@ bin/console oro:install \
     --symlink \
     --sample-data=y \
     --timeout=0</pre></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row justify-content-md-center">
-        <div class="col-md-2">
-            <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img" /></a>
-        </div>
-        <div class="col-md-4">
-            <div class="card-body">
-                <h2 class="card-title"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></h2>
-                <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on Weezevent.</a></p>
+<div class="bloc bloc-footer">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-2">
+                <a href="https://www.weezevent.com/orohack-paris-2019"><img src="image/ticket.png" class="card-img" /></a>
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h2 class="card-title"><a href="https://www.weezevent.com/orohack-paris-2019">Get your ticket</a></h2>
+                    <p class="card-text"><a href="https://www.weezevent.com/orohack-paris-2019">Get your tickets on Weezevent.</a></p>
+                </div>
             </div>
         </div>
     </div>
