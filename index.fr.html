@@ -37,14 +37,17 @@
     <div class="container">
         <div class="text-center h4">Nos Sponsors</div>
         <div class="row justify-content-md-center">
-            <div class="col-md-4 text-center">
+            <div class="col-sm-6 col-md-3 text-center">
+                <a href="https://oroinc.fr" target="_blank"><img src="image/logo/logo-oroinc.png" alt="Oro Inc"></a>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
+                <a href="https://www.marello.com" target="_blank"><img src="image/logo/logo-marello.png" alt="Marello"></a>
+            </div>
+            <div class="col-sm-6 col-md-3 text-center">
                 <a href="https://www.synolia.com/" target="_blank"><img src="image/logo/logo-synolia.png" alt="Synolia"></a>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-sm-6 col-md-3 text-center">
                 <a href="https://www.dnd.fr/" target="_blank"><img src="image/logo/logo-dnd.png" alt="DnD"></a>
-            </div>
-            <div class="col-md-4 text-center">
-                <a href="https://www.marello.com" target="_blank"><img src="image/logo/logo-marello.png" alt="Marello"></a>
             </div>
         </div>
     </div>
@@ -105,13 +108,13 @@
     <div class="container">
         <div class="row">
             <div class="col-8">
-                <iframe width="715" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.380852103233338%2C48.861259825508164%2C2.385358214378357%2C48.86352550013056&amp;layer=mapnik&amp;marker=48.86237190088616%2C2.383017798420042"></iframe>
+                <iframe width="715" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=2.371284663677216%2C48.85770053295303%2C2.3739668726921086%2C48.859170514400105&amp;layer=mapnik&amp;marker=48.858435529072686%2C2.372625768184662"></iframe>
             </div>
             <div class="col-4">
                 <h2 class="card-title">Lieu de l'évènement</h2>
-                <h3 class="card-subtitle mb-2 text-muted">Espace Hermes</h3>
-                <p class="card-text">Cité Joly<br>75011 Paris</p>
-                <a href="https://www.openstreetmap.org/#map=18/48.86239/2.38311">Afficher en grand</a>
+                <h3 class="card-subtitle mb-2 text-muted">Cool & Workers</h3>
+                <p class="card-text">34 rue du Chemin Vert<br>75011 Paris</p>
+                <a href="https://www.openstreetmap.org/?mlat=48.85844&amp;mlon=2.37263#map=19/48.85844/2.37263">Afficher en grand</a>
             </div>
         </div>
     </div>
@@ -215,24 +218,24 @@
                         <p class="card-text alert alert-secondary">Check the OroPlatform CE <a href="https://oroinc.com/oroplatform/doc/current/install-upgrade/installation-quick-start-dev#install-for-dev">installation instructions</a> for more details.</p>
                         <p class="card-text"><pre>
 composer create-project oro/platform-application:^3.1 \
---repository='{"type":"vcs","url":"git@github.com:oroinc/platform-application"}'
+    --repository=https://satis.oroinc.com
 
 cd platform-application
 
 bin/console oro:install \
---application-url=http://localhost:8000 \
---env=prod \
---organization-name=HackOro \
---user-name=admin \
---user-email=hello@example.com \
---user-firstname=John \
---user-lastname=Doe \
---user-password=password \
---language=en \
---formatting-code=en \
---symlink \
---sample-data=y \
---timeout=0</pre></p>
+    --application-url=http://localhost:8000 \
+    --env=prod \
+    --organization-name=HackOro \
+    --user-name=admin \
+    --user-email=hello@example.com \
+    --user-firstname=John \
+    --user-lastname=Doe \
+    --user-password=password \
+    --language=en \
+    --formatting-code=en \
+    --symlink \
+    --sample-data=y \
+    --timeout=0</pre></p>
                     </div>
                 </div>
             </div>
@@ -249,24 +252,24 @@ bin/console oro:install \
                         <p class="card-text alert alert-secondary">Check the OroCommerce CE <a href="https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation-quick-start-dev/commerce-crm">installation instructions</a> for more details.</p>
                         <p class="card-text"><pre>
 composer create-project oro/commerce-crm-application:^3.1 \
---repository='{"type":"vcs","url":"git@github.com:oroinc/orocommerce-application"}'
+    --repository=https://satis.oroinc.com
 
 cd commerce-crm-application
 
 bin/console oro:install \
---application-url=http://localhost:8000 \
---env=prod \
---organization-name=HackOro \
---user-name=admin \
---user-email=hello@example.com \
---user-firstname=John \
---user-lastname=Doe \
---user-password=password \
---language=en \
---formatting-code=en \
---symlink \
---sample-data=y \
---timeout=0</pre></p>
+    --application-url=http://localhost:8000 \
+    --env=prod \
+    --organization-name=HackOro \
+    --user-name=admin \
+    --user-email=hello@example.com \
+    --user-firstname=John \
+    --user-lastname=Doe \
+    --user-password=password \
+    --language=en \
+    --formatting-code=en \
+    --symlink \
+    --sample-data=y \
+    --timeout=0</pre></p>
                     </div>
                 </div>
             </div>
@@ -283,24 +286,24 @@ bin/console oro:install \
                         <p class="card-text alert alert-secondary">Check the OroCRM CE <a href="https://oroinc.com/orocrm/doc/current/install-upgrade/installation-quick-start-dev/crm">installation instructions</a> for more details.</p>
                         <p class="card-text"><pre>
 composer create-project oro/crm-application:^3.1 \
---repository='{"type":"vcs","url":"git@github.com:oroinc/crm-application"}'
+    --repository=https://satis.oroinc.com
 
 cd crm-application
 
 bin/console oro:install \
---application-url=http://localhost:8000 \
---env=prod \
---organization-name=HackOro \
---user-name=admin \
---user-email=hello@example.com \
---user-firstname=John \
---user-lastname=Doe \
---user-password=password \
---language=en \
---formatting-code=en \
---symlink \
---sample-data=y \
---timeout=0</pre></p>
+    --application-url=http://localhost:8000 \
+    --env=prod \
+    --organization-name=HackOro \
+    --user-name=admin \
+    --user-email=hello@example.com \
+    --user-firstname=John \
+    --user-lastname=Doe \
+    --user-password=password \
+    --language=en \
+    --formatting-code=en \
+    --symlink \
+    --sample-data=y \
+    --timeout=0</pre></p>
                     </div>
                 </div>
             </div>
@@ -317,23 +320,25 @@ bin/console oro:install \
                         <p class="card-text alert alert-secondary">Check the Marello CE <a href="https://knowledgebase.marello.com/knowledge-base/installation-instructions/">installation instructions</a> for more details.</p>
                         <p class="card-text alert alert-info"><i class="fa fa-info"></i> Attention: at the time of the writing, the Marello 2.0 version isn't yet released, we are providing an 1.5 version here.</p>
                         <p class="card-text"><pre>
-composer create-project marellocommerce/marello-application:^1.5 \
---repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'
+composer create-project marellocommerce/marello-application:^2.0 \
+    --repository='{"type":"vcs","url":"git@github.com:marellocommerce/marello-application.git"}'
 
 cd marello-application
 
 bin/console oro:install \
---application-url=http://localhost:8000 \
---env=prod \
---organization-name=HackOro \
---user-name=admin \
---user-email=hello@example.com \
---user-firstname=John \
---user-lastname=Doe \
---user-password=password \
---symlink \
---sample-data=y \
---timeout=0</pre></p>
+    --application-url=http://localhost:8000 \
+    --env=prod \
+    --organization-name=HackOro \
+    --user-name=admin \
+    --user-email=hello@example.com \
+    --user-firstname=John \
+    --user-lastname=Doe \
+    --user-password=password \
+    --language=en \
+    --formatting-code=en \
+    --symlink \
+    --sample-data=y \
+    --timeout=0</pre></p>
                     </div>
                 </div>
             </div>

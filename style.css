@@ -13,6 +13,7 @@ a:hover {
     color: #000;
 }
 iframe { max-width: 100%;}
+img { max-width: 100%; height: auto;}
 
 /* language-switcher */
 .language-switcher {
